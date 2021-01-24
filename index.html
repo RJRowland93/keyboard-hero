@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+ <html>
+   <head>
+     <meta charset="utf-8" />
+     <title>Keyboard Hero</title>
+     <style>
+         .forecast {
+            display: flex;
+            flex-direction: column-reverse; 
+             background: aliceblue;
+             justify-content: space-around;
+
+         }
+        .key-row {
+             display: flex;
+         }
+         .key-row:first-child {
+             background: blue;
+             padding-bottom: 10px;
+         }
+         .key {
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             flex: 1 1 50px;
+             height: 50px;
+             background: white;
+             margin: 0 10px;
+         }
+         .game-over-message {
+             position: absolute;
+             top: 0;
+             background-color: red;
+         }
+     </style>
+   </head>
+   <body>
+       <div id="score">Score: 0</div>
+       <div id="timer">Time remaining: 20</div>
+       <div id="keys" class="forecast"></div>
+       <div id="message"></div>
+   </body>
+ </html>
